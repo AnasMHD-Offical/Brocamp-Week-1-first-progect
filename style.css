@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:#f9faf6;
+    --second-bg-color:#B9BDBB;
+    --text-color:#191102;
+    --second-text-color:#9AA0A3;
+
+    --h1-font:4rem;
+    --h2-font:2.7rem;
+    --p-font:1rem;
+
+    
+}
+header{
+    width: 100%;
+    height: 75px;
+    background: var(--bg-color);
+    border:2px solid white;
+    display: flex;
+    transition: all .6s ease;
+
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    margin-left: 60px;
+    display: flex;
+    overflow: hidden;
+}
+nav,.nav-list{
+    margin-left: 40px;
+    width: 100%;
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    
+}
+.nav-list a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: var(--p-font);
+    cursor: pointer;
+}
+.nav-list a:hover{
+    padding: 12px;
+    border: none ;
+    border-radius: 60px;
+    color: var(--bg-color);
+    background: var(--text-color);
+    transition: all .3s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+section{
+    width: 100%;
+    height: 80vh;
+    border: 2px solid white;
+}
+.hero{
+    background:url(https://i.pinimg.com/originals/f6/ad/81/f6ad81d6d6db60b41041e2172db95aae.jpg);
+    background-repeat: none;
+    background-size: cover;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px);  */
+   
+}
+bg-img{
+    background:url(https://i.pinimg.com/originals/f6/ad/81/f6ad81d6d6db60b41041e2172db95aae.jpg);
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 5; */
+}
+
+.describ{
+    z-index: 4;
+    width: 500px;
+    margin-left: 70px;
+    margin-top: 140px;
+}
+.describ h1{
+    font-size: var(--h1-font);
+    font-weight: 400;
+    color: var(--bg-color);
+}
+.describ p{
+    margin-top: 10px;
+    font-size: var(--p-font);
+    line-height: 4vh;
+    font-weight: 300;
+    color: var(--second-text-color);
+}
+.describ button{
+    outline: none;
+    border:.5px solid var(--second-bg-color);
+    margin-top: 18px;
+    padding: 13px;
+    border-radius: 60px;
+    font-weight: 400;
+    font-size: var(--p-font);
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+.describ button:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 500;
+    border:1px solid var(--text-color) ;
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
