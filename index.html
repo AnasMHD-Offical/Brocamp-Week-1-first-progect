@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First project</title>
+    <title>Travosy Brocamp First project</title>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="Assets/LinkedIn-profile.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/travosy-favicon.png" type="image/x-icon">
 
     <!--Google fonts link roborto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,24 +26,20 @@
 <body>
     <!--header-->
     
-    <section class="hero">
+    <section class="hero" id="hero">
         <header class="header">
             <div class="brand-logo">
                 <img src="Assets/travo-removebg-preview.png" alt="brand-logo" title="logo" class="logo">
             </div>
             <nav class="nav-list">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Booking</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="#booking">Booking</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="bg-img">
-            
-        </div>
         <div class="describ">
             <h1>Explore the Extraordinary</h1>
             <p>At Travosy, we believe that travel is more than just a journey;
@@ -54,7 +50,8 @@
         </div>
 
     </section>
-    <section class="about">
+    <!--About section-->
+    <section class="about" id="about">
         <h1 class="about-title">Top values for you</h1>
         <p class="about-discribe">Try variety of benefits when using our services</p>
         <div class="about-cards">
@@ -81,8 +78,9 @@
         </div>
     </section>
     <!--Destination section-->
-    <section class="destination">
+    <section class="destination" id="destination">
         <h1>Choose your tour</h1>
+        <p>Expolre the extraordinary packages</p>
         <div class="destination-cards">
             <div class="destination-container">
                 <img src="Assets/maldives.jpg" alt="places">
@@ -135,6 +133,44 @@
                 </div>
             </div>
         </div>
+        <div class="more"><a href="">See more</a></div>
     </section>
+    <!--Booking section-->
+    <section class="booking" id="booking">
+        <h1>Book your travel now</h1>
+        <p>Fill the following form</p>
+        <div class="booking-container">
+            <form action="" class="form"> 
+                    
+                    <input class="form-input" type="text" placeholder="Enter Email">            
+                    <div class="inputs">
+                    <select name="person" id="person" title="booking">
+                        <option value="person">Person</option>
+                        <option value="person">single</option>
+                        <option value="person">couple</option>
+                        <option value="person">family</option>
+                        <option value="person">colleage</option>
+                        <option value="person">others</option>
+                    </select>
+                    <button>submit</button>
+                    </div>
+                    
+            </form>
+        </div>
+    </section>
+    <footer>
+        <img src="Assets/travo-removebg-preview.png" alt="">
+        <nav class="footer-list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destination">Destinations</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <div class="copy">
+        <p>&copy; All rights reserved by Anas muhammed AKA A.developer</p>
+    </div>
 </body>
 </html>

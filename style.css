@@ -4,6 +4,7 @@
     /* font-family: "Roboto", sans-serif; */
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -72,7 +73,7 @@ nav,.nav-list{
 }
 section{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     border: 2px solid white;
 }
 .hero{
@@ -120,6 +121,7 @@ bg-img{
     font-size: var(--p-font);
     background: var(--text-color);
     color: var(--bg-color);
+    cursor: pointer;
 }
 .describ button:hover{
     background: var(--bg-color);
@@ -136,7 +138,8 @@ bg-img{
 }
 .about-title{
     font-size: var(--h2-font);
-    margin: 30px;
+    margin-top: 50px;
+    margin: 20px;
     margin-bottom: 10px;
     font-weight: 600;
     text-align: center;
@@ -149,10 +152,11 @@ bg-img{
 }
 .about-cards{
     display: flex;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-left: 20px;
     gap: 4rem;
     justify-content: center;
+    cursor: pointer;
 }
 .container{
     display: flex;
@@ -189,8 +193,10 @@ bg-img{
     transition: all .5s ease;
     box-shadow: 1px 1px 1px var(--text-color);
 }
+/* Destination section */
 .destination{
     background:#fff;
+    
 }
 .destination h1{
     font-size: var(--h2-font);
@@ -199,12 +205,21 @@ bg-img{
     margin-top: 20px;
     text-align: center;
 }
+.destination p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: var(--p-font);
+    line-height: 4vh;
+    font-weight: 500;
+    color: var(--text-color);
+}
 .destination-cards{
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-left: 10px;
     gap: 2rem;
+    cursor: pointer;
 }
 .destination-container{
     display: flex;
@@ -247,7 +262,128 @@ bg-img{
     
 }
 .destination-container:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     transition: all .5s ease;
     box-shadow: 2px 3px 2px var(--second-bg-color);
+}
+.more{
+    margin-left:620px;
+    margin-top: 30px;
+    width: 160px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background: #fff;
+    border: 1px solid var(--second-bg-color);
+    box-shadow: 1px 1px 1px var(--second-bg-color);
+    cursor: pointer;
+}
+.more a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+.more:hover,.more a:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+.booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-color);
+    height: 480px;
+}
+.booking h1{
+    font-size: var(--h2-font);
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.booking p{
+    margin-top: 10px;
+    font-size: var(--p-font);
+    line-height: 4vh;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.booking-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.booking-container form input{
+    width: 600px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: 1px solid var(--second-text-color);
+    padding: 15px;
+    background: #fff;
+    box-shadow: 1px 1px 1px var(--second-bg-color);
+}
+.booking-container form select{
+    width: 320px;
+    border-radius: 30px;
+    border: 1px solid var(--second-text-color);
+    padding: 15px;
+    background: #fff;
+    box-shadow: 1px 1px 1px var(--second-bg-color);
+    cursor: pointer;
+}
+.booking-container form button{
+    width: 220px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.inputs{
+    margin: 10px;
+}
+footer{
+    background: #fff;
+    display: flex;
+}
+footer img{
+    margin: 40px;
+    width: 100px;
+}
+footer .footer-list{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-list ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    
+}
+.footer-list a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: var(--p-font);
+    cursor: pointer;
+}
+footer .footer-list a:hover{
+    border-bottom: 2px solid var(--text-color);
+    transition: all .3s ease-in;
+}
+.copy{
+    background: var(--bg-color);
+    padding: 15px;
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: center;
 }
